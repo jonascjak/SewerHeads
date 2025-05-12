@@ -11,3 +11,49 @@ body, html {
     height: 100%;
     object-fit: cover;
 }
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.5); /* Forstørrer logoet med 10% */
+    transition: transform 0.3s ease; /* Glidende overgang */
+}
+
+
+.logo {
+    width: 600px; /* Den hen ændrer størrelsen */
+}
+
+.navbar {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
