@@ -1,0 +1,73 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Vertical Navbar */
+.main-navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.main-navbar .logo {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.main-navbar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.main-navbar ul li {
+    width: 100%;
+}
+
+.main-navbar ul li a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.main-navbar ul li a:hover {
+    background-color: #333333;
+}
+
+/* Content styling */
+.content {
+    margin-left: 200px; /* Samme bredde som navbaren */
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    height: 100vh;
+    scroll-snap-type: x mandatory;
+}
+
+.content section {
+    min-width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    border-right: 2px solid #e2e2e2;
+}
