@@ -1,9 +1,11 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #f0f0f0;
+    background-color: #1a1110;
 }
-
+p{
+    color: #ff2400;
+}
 .switch {
     position: absolute;
     top: 20px;
@@ -51,5 +53,6 @@ input:checked + .slider::before {
 }
 
 .vimeo-embed {
-    margin-bottom: -20vh; /* allows next video top to be visible */
+    margin-bottom: 10%;
+    display: block;
 }
