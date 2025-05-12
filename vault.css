@@ -6,10 +6,22 @@ body {
 p{
     color: #ff2400;
 }
+
+#logo{
+    position: fixed;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sideImage{
+    position: fixed;
+    top: 100vh;
+    right: 20vh;
+}
 .switch {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: fixed;
+    top: 5vh;
+    right: 20vh;
 }
 
 .switch input {
