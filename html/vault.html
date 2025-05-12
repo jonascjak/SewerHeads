@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <title>Vault</title>
     <link rel="stylesheet" href="../css/vault.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
 </head>
 <body>
-<label class="switch">
-    <input type="checkbox" id="toggleSwitch" checked>
-    <span class="slider round"></span>
-</label>
+
+<div class="main-navbar">
+
+    <div class="navbar-containers">
+
+        <div class="top-section-container"> <!-- Statisk på hver side -->
+            <a href="Index.html" class="logo-link">
+                <h1 class="logo">Sewerhead</h1>
+            </a>
+            <ul>
+                <li><a href="vault.html">Vault</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-section-container"> <!-- ændrer sig fra page til page -->
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" checked>
+                    <span class="slider round"></span>
+                </label>
+        </div>
+    </div>
+
+</div>
 
 <div id="videoContainer"></div>
 
