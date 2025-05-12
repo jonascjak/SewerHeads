@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    background: white;
+    margin: 0;
+    padding: 40px;
+}
+
+.collections {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.collection {
+    text-decoration: none;
+    color: black;
+}
+
+.collection img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
