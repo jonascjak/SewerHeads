@@ -1,0 +1,82 @@
+/* About Us Page Layout */
+.about-container {
+    display: flex;
+    height: 100vh;
+    margin-left: 200px;
+}
+
+/* Placering af billede */
+.about-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Placering af billede slut*/
+
+/* Placering af description */
+.about-description {
+    flex: 1;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-description-top {
+    background-color: #D4E2F0;
+    height: 50%;
+    padding: 20px;
+}
+
+.about-description-bottom {
+    display: flex;
+    flex: 1;
+}
+
+.about-description-bottom-left,
+.about-description-bottom-right {
+    background-color: #E0DFF9;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-description-bottom-left img,
+.about-description-bottom-right img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.founder-name{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-left: 0;
+}
+
+
+/* her er til overskrift - kan/skal redigeres */
+.about-description h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* her er til tekst - kan/skal redigeres */
+.about-description p {
+    margin-bottom: 15px;
+    line-height: 1.6em;
+    color: #555;
+}
