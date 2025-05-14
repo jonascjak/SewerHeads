@@ -5,7 +5,8 @@ const collections = {
         cover: "/content/collection1/cover.jpg",
         images: [
             { src: "/content/collection1/photo1.jpg", alt: "Cyclist in Copenhagen" },
-            { src: "/content/collection1/photo2.jpg", alt: "Shadowy alleyway" }
+            { src: "/content/collection1/photo2.jpg", alt: "Shadowy alleyway" },
+            { src: "/content/collection1/photo3.jpg", alt: "Shadowy alleyway" }
         ]
     },
     collection2: {
