@@ -1,0 +1,8 @@
+/* Custom styling for About page's bottom section - Hvis der er noget specielt her */
+.custom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 30%;
+}

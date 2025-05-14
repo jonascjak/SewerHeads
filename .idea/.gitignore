@@ -6,4 +6,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-/content/250505_SEWERHEAD_WEBREEL_01.mov
+
+content/*.mov
+content/250505_SEWERHEAD_WEBREEL_01.mov
