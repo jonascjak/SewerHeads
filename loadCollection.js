@@ -15,7 +15,6 @@ if (collections[collectionName]) {
         const img = document.createElement("img");
         img.src = src;
         img.alt = alt;
-        img.classList.add("collection-image");
         img.loading = "lazy";
         galleryEl.appendChild(img);
     });

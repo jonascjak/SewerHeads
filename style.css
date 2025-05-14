@@ -1,37 +1,11 @@
+/* ======================
+   GENERAL STYLES
+====================== */
 body {
     font-family: sans-serif;
     background: white;
     margin: 0;
-    padding: 40px;
-}
-
-.collections {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-}
-
-.collection {
-    text-decoration: none;
-    color: black;
-}
-
-.collection-image {
-    height: 400px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.collection img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 0;
 }
 
 .description {
@@ -40,35 +14,83 @@ body {
     line-height: 1.4;
 }
 
-#collection-container img {
-    max-width: 100%;
-    height: 80vh;
-    display: block;
-    margin: 1rem auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+/* ======================
+   GALLERY PAGE (gallery.html)
+====================== */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 2vw;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
 }
+
+.collection {
+    text-decoration: none;
+    color: black;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 20vw;
+}
+
+.collection img {
+    width: 21vw;
+    height: calc(21vw*16/9);
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* ======================
+   COLLECTION PAGE (collection.html)
+====================== */
+#collection-container{
+    padding:0;
+    margin: 0;
+
+}
+
 
 .scroll-gallery {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
-    scroll-snap-type: x mandatory;
-   scrollbar-width: thin;   /*           shows scrollbar*/
-   /* -ms-overflow-style: none;  /*         hides scrollbar
-    scrollbar-width: none; */
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin; /*firefox*/
+  -ms-overflow-style: auto; /*telefon*/
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+
+
 }
 
-/*Hides scrollbar
+/* Chrome */
 .scroll-gallery::-webkit-scrollbar {
-    display: none;
-}*/
+   height: 4px;
+}
+
 
 .scroll-gallery img {
-    height: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 8px;
+   flex-shrink: 0;
+    width: 30vw;
+    height: calc(30vw*16/9);
+    object-fit: contain;
     scroll-snap-align: start;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .scroll-gallery img{
+        width: 70vw;
+        height: calc(70vw*16/9);
+    }
 }

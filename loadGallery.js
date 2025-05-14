@@ -1,4 +1,4 @@
-const container = document.getElementById("collections");
+const container = document.getElementById("gallery");
 
 Object.entries(collections).forEach(([key, collection]) => {
     const link = document.createElement("a");
