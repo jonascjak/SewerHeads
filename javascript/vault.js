@@ -38,5 +38,11 @@ async function showVimeo() {
 }
 
 async function showPhoto(){
-    videoContainer.innerHTML = "<p>Loading...</p>";
+    videoContainer.innerHTML = '';
+    const galleryDiv = document.createElement("div");
+    galleryDiv.id = "gallery";
+    galleryDiv.className = "gallery";
+    videoContainer.appendChild(galleryDiv);
+
+    loadGallery(galleryDiv);
 }

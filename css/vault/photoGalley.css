@@ -16,7 +16,7 @@ body {
 
 
 /* ======================
-   GALLERY PAGE (gallery.html)
+   GALLERY PAGE (showPhoto i vault.js)
 ====================== */
 
 .gallery {
@@ -79,7 +79,7 @@ body {
 .scroll-gallery img {
    flex-shrink: 0;
     width: 30vw;
-    height: calc(30vw*16/9);
+    height: calc(30vw*16/9); /*Skal der gøres noget ved */
     object-fit: contain;
     scroll-snap-align: start;
     margin: 0;
