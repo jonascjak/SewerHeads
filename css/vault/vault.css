@@ -2,55 +2,6 @@ p{
     color: #ff2400;
 }
 
-.bottom-section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px; /* Lidt plads i bunden */
-    height: 50px;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    top: 20px;
-    left: 20px;
-}
-
-.switch input {
-    display: none;
-}
-
-.slider {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    background-color: #ccc;
-    border-radius: 34px;
-    cursor: pointer;
-}
-
-.slider::before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-input:checked + .slider {
-    background-color: #ccff00;
-}
-
-input:checked + .slider::before {
-    transform: translateX(26px);
-}
-
 #videoContainer {
     margin-top: 20px;
     padding: 0 20px;
