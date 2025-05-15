@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Vault</title>
-    <link rel="stylesheet" href="../css/vault/vault.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
 
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/vault/vault.css">
+    <link rel="stylesheet" href="../css/vault/navbar-vault.css">
 </head>
+
 <body>
 
 <div class="main-navbar">
-
-    <div class="navbar-containers">
-
-        <div class="top-section-container"> <!-- Statisk på hver side -->
-            <a href="Index.html" class="logo-link">
-                <h1 class="logo">Sewerhead</h1>
-            </a>
-            <ul>
-                <li><a href="vault.html">Vault</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="bottom-section-container"> <!-- ændrer sig fra page til page -->
-                <label class="switch">
-                    <input type="checkbox" id="toggleSwitch" checked>
-                    <span class="slider round"></span>
-                </label>
-        </div>
+    <div class="top-section-container">
+        <a href="Index.html" class="logo-link">
+            <img src="../content/LogoWhite.png" alt="Sewerhead Logo" class="logo-image">
+        </a>
+        <ul>
+            <li><a href="vault.html">Vault</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 
+    <div class="custom-container">
+        <p style="color: white;">Custom delen</p>
+    </div>
+
+    <div class="bottom-section-container">
+        <!-- Her kan du tilføje noget custom for About-siden -->
+        <p style="color: white;"></p>
+
+        <ul class="social-links">
+
+        </ul>
+        <ul>
+            <li><a href="vault.html">FAQ</a></li>
+            <li><a href="about.html">Terms & Conditions</a></li>
+        </ul>
+    </div>
 </div>
 
 <div id="videoContainer"></div>

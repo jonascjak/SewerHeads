@@ -7,14 +7,6 @@ p{
     color: #ff2400;
 }
 
-.bottom-section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px; /* Lidt plads i bunden */
-    height: 50px;
-}
-
 .switch {
     position: relative;
     display: inline-block;
