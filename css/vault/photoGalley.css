@@ -37,8 +37,8 @@ body {
 }
 
 .collection img {
-    width: 21vw;
-    height: calc(21vw*16/9);
+    width: 30vw;
+    height: calc(30vw*5/4);
     display: block;
     object-fit: cover;
     border-radius: 8px;
@@ -51,8 +51,8 @@ body {
 ====================== */
 #collection-container{
     padding:0;
-    margin: 0;
-
+    margin-left: 200px;
+    height: 1vh;
 }
 
 
@@ -61,7 +61,7 @@ body {
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-width: thin; /*firefox*/
+  scrollbar-width: none; /*firefox*/
   -ms-overflow-style: auto; /*telefon*/
     padding: 0;
     margin: 0;
@@ -79,7 +79,7 @@ body {
 .scroll-gallery img {
    flex-shrink: 0;
     width: 30vw;
-    height: calc(30vw*16/9); /*Skal der gøres noget ved */
+    /*height: calc(30vw*16/9); Skal der gøres noget ved */
     object-fit: contain;
     scroll-snap-align: start;
     margin: 0;
