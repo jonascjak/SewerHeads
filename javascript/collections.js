@@ -12,6 +12,7 @@ export const collections = {
         ]
     },
     collection2: {
+        type: "image",
         title: "Martinquad voici",
         description: "Martinquad voici - 2023",
         cover: "/content/collection2/cover.jpg",
@@ -23,6 +24,7 @@ export const collections = {
         ]
     },
     collection3: {
+        type: "image",
         title: "Gumi Leschmidt",
         description: "Gumi Leschmidt - 2025",
         cover: "/content/collection4/cover.jpg",
