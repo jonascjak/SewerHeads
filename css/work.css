@@ -37,6 +37,8 @@ body {
     font-family: 'Helvetica Neue Bold', sans-serif;
     height: 100vh;
     padding: 0;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /* nav bar styling start */
@@ -47,7 +49,7 @@ body {
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
-    position: absolute;
+    position: relative;
     width: 98%;
     top: 0;
     left: 0;
@@ -73,9 +75,12 @@ body {
 
 /* nav bar elementer styling start */
 #content {
-    position: relative;
-    height: 100vh;
+    margin-top: 0;
+    height: calc(100vh - var(-- navbar - height)); /* Dynamisk plads til navbar */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #close {
@@ -142,6 +147,8 @@ body {
 }
 
 .portfolio-item {
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
     cursor: pointer;

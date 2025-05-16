@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Viser navbar igen
         navbar.style.display = "flex";
+        navbar.style.position = "relative";
         content.style.height = "auto";
 
         // Genskab portfolio grid
