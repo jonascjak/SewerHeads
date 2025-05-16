@@ -3,6 +3,7 @@ import {collections} from "./collections.js";
 document.addEventListener("DOMContentLoaded", () => {
     const portfolioGrid = document.getElementById("portfolio-grid");
 
+
     Object.keys(collections).forEach((key) => {
         const collection = collections[key];
 
@@ -22,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        portfolioItem.appendChild(portfolioItem);
-    })
+        console.log(portfolioItem.parentNode);
 
+        portfolioGrid.appendChild(portfolioItem);
+    })
 })
