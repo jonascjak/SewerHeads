@@ -12,6 +12,7 @@ export const collections = {
         ]
     },
     collection2: {
+        type: "image",
         title: "Martinquad voici 2023",
         description: "description 2",
         cover: "/content/collection2/cover.jpg",
@@ -23,6 +24,7 @@ export const collections = {
         ]
     },
     collection3: {
+        type: "image",
         title: "Solitude hibernating hopes 2024",
         description: "description 3",
         cover: "/content/collection3/cover.jpg",
@@ -35,6 +37,7 @@ export const collections = {
         ]
     },
     collection4: {
+        type: "image",
         title: "Gumi Leschmidt 2025",
         description: "description 4",
         cover: "/content/collection4/cover.jpg",
@@ -57,6 +60,7 @@ export const collections = {
         type: "video",
         title: "Behind the Scenes",
         description: "A sneak peek into the making of our art.",
+        cover: "/content/collection3/cover.jpg",
         vimeoEmbed: `
             <div style="padding:177.78% 0 0 0;position:relative;">
                 <iframe src="https://player.vimeo.com/video/1084156096?autoplay=1&muted=1"
@@ -64,6 +68,16 @@ export const collections = {
                         allow="autoplay; fullscreen;"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" title="Behind the Scenes"></iframe>
             </div>
+        `
+    },
+
+    video2: {
+        type: "video",
+        title: "Søpavilion",
+        description: "lavet i 2025",
+        cover: "/content/collection3/cover.jpg",
+        videoembed: `
+        
         `
     }
 };

@@ -40,6 +40,7 @@ body {
     padding: 0;
 }
 
+/* nav bar styling start */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -55,7 +56,7 @@ body {
 }
 
 .logo img {
-    width: 140px;
+    width: 180px;
 }
 
 .nav-links span {
@@ -68,7 +69,10 @@ body {
 .nav-links span:hover {
     text-decoration: underline;
 }
+/* nav bar styling slut */
 
+
+/* nav bar elementer styling start */
 #content {
     position: relative;
     height: 100vh;
@@ -109,3 +113,5 @@ body {
     color: grey;
     opacity: 0.8;
 }
+/* nav bar elementer styling slut */
+
