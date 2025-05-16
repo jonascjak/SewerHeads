@@ -119,57 +119,56 @@ body {
 }
 /* nav bar elementer styling slut */
 
-.portfolio-container{
-    padding-top: 5%;
-}
 
 #portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-
-    gap: 20px;
-    padding: 40px;
-    width: 100vw;
-
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr); /* To rækker */
+    gap: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+    height: calc(100vh - 80px);
+    width: max-content; /* Sørger for at grid'et kun fylder det, det skal */
+    align-items: start;
 }
 
 #portfolio-grid::-webkit-scrollbar {
-    height: 8px;
+    height: 1px;
 }
 
 #portfolio-grid::-webkit-scrollbar-thumb {
     background-color: grey;
-    border-radius: 10px;
 }
 
 .portfolio-item {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    position: relative;
+    justify-content: flex-start;
+    scroll-snap-align: start;
+    min-width: 250px;
+    height: 100%;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 10px;
     transition: transform 0.3s ease;
-    scroll-snap-align: start;
+    margin-bottom: 10px;
 }
 
 .portfolio-item img {
-    width: auto;
-    height: 300px;
-    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    margin-bottom: 10px;
 }
 
 .portfolio-title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
     color: white;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 35px;
 }

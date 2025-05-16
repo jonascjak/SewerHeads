@@ -122,7 +122,7 @@ export const collections = {
         type: "video",
         title: "Goss",
         description: "Salon Bleu - Goss",
-        content: "/content/collection3/cover.jpg",
+        cover: "/content/collection3/cover.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155194?autoplay=1&muted=1" 
@@ -150,9 +150,9 @@ export const collections = {
     },
     video8: {
         type: "video",
-        title: "Cinderella",
+        title: "Cinderella1",
         description: "Cinderella",
-        cover: "/content/collection3 photo2.jpg",
+        cover: "/content/collection3/photo2.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155451?autoplay=1&muted=1" 
