@@ -6,7 +6,7 @@ const descEl = document.getElementById("collection-description");
 
 function renderImageCollection(images) {
     document.getElementById("videos").style.display = "none";
-    document.getElementById("images").style.display = "flex";
+    document.getElementById("images").style.display = "block";
     const imgEl = document.getElementById("carouselImage");
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");

@@ -1,13 +1,13 @@
 const pageContent = {
     about: {
         main: `
-      <p>bla bla bla about bla bla bla</p>`,
-        secondary: "This is a secondary description for About."
+      <p>A production company by Thomas Beder & Sasha Bloor</p>`,
+        secondary: "A website by Jonas Jakobsen & Peter Bang."
     },
     contact: {
         main: `
-      <p>bla bla bla contact bla bla</p>`,
-        secondary: "Feel free to reach out to me anytime."
+      <p>contact@sewerheadfilms.com</p>`,
+        secondary: "Feel free to reach out."
     },
     shop: {
         main: `
@@ -42,9 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.clearContent = function () {
         const content = document.getElementById("content");
-        content.innerHTML = '';
+        const navbar = document.querySelector(".navbar");
 
+        // Tømmer indholdet
+        content.innerHTML = ``;
+
+        // Viser navbar igen
         navbar.style.display = "flex";
         content.style.height = "auto";
-    }
+
+        // Genskab portfolio grid
+        window.renderPortfolioGrid();
+    };
+
 });

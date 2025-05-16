@@ -77,7 +77,7 @@ export const collections = {
         type: "video",
         title: "Blondie",
         description: "Antground - Blondie",
-        cover: "content/collection3/photo2.jpg",
+        cover: "/content/collection3/photo2.jpg",
         vimeoEmbed: `    
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084154871?autoplay=1&muted=1" 
@@ -92,7 +92,7 @@ export const collections = {
         type: "video",
         title: "Edna",
         description: "Antground - Edna",
-        cover: "content/collection3/photo4.jpg",
+        cover: "/content/collection3/photo4.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084154945?autoplay=1&muted=1" 
@@ -107,7 +107,7 @@ export const collections = {
         type: "video",
         title: "Svetlana",
         description: "Antground - Svetlana",
-        cover: "content/collection3/photo5.jpg",
+        cover: "/content/collection3/photo5.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155031?autoplay=1&muted=1" 
@@ -122,7 +122,7 @@ export const collections = {
         type: "video",
         title: "Goss",
         description: "Salon Bleu - Goss",
-        content: "content/collection3/cover.jpg",
+        content: "/content/collection3/cover.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155194?autoplay=1&muted=1" 
@@ -137,7 +137,7 @@ export const collections = {
         type: "video",
         title: "Winter",
         description: "Søpavillonen - Winter",
-        cover: "content/collection3/photo1.jpg",
+        cover: "/content/collection3/photo1.jpg",
         vimeoEmbed: `       
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155327?autoplay=1&muted=1" 
@@ -152,7 +152,7 @@ export const collections = {
         type: "video",
         title: "Cinderella",
         description: "Cinderella",
-        cover: "content/collection3 photo2.jpg",
+        cover: "/content/collection3 photo2.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155451?autoplay=1&muted=1" 
@@ -167,7 +167,7 @@ export const collections = {
         type: "video",
         title: "Freja",
         description: "Salon Bleu - Freja Kirk",
-        cover: "content/collection3/photo3.jpg",
+        cover: "/content/collection3/photo3.jpg",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155733?autoplay=1&muted=1" 
@@ -182,7 +182,7 @@ export const collections = {
         type: "video",
         title: "Søpavillonen",
         description: "Søpavillonen",
-        cover: "content/collection3/photo4.jpg",
+        cover: "/content/collection3/photo4.jpg",
         vimeoEmbed: `   
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084155867?autoplay=1&muted=1" 
@@ -197,7 +197,7 @@ export const collections = {
         type: "video",
         title: "Cinderella",
         description: "Cinderella",
-        cover: "content/collection3/photo5.jpg",
+        cover: "/content/collection3/photo5.jpg",
         vimeoEmbed: ` 
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084156096?autoplay=1&muted=1" 
@@ -212,7 +212,7 @@ export const collections = {
         type: "video",
         title: "Peter",
         description: "Salon Bleu - Peter Sommer",
-        cover: "content/collection3/photo1.jpg",
+        cover: "/content/collection3/photo1.jpg",
         vimeoEmbed: `     
         <div style="padding-top:56.25%;position:relative;">
             <iframe src="https://player.vimeo.com/video/1084156123?autoplay=1&muted=1" 

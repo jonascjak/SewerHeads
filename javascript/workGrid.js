@@ -1,8 +1,15 @@
-import {collections} from "./collections.js";
+import { collections } from "./collections.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const portfolioGrid = document.getElementById("portfolio-grid");
+    renderPortfolioGrid();
+});
 
+// Funktionen der genererer portfolio grid'et
+function renderPortfolioGrid() {
+    const portfolioGrid = document.createElement("div");
+    window.renderPortfolioGrid = renderPortfolioGrid;
+
+    portfolioGrid.id = "portfolio-grid"; // Sætter ID på grid'et
 
     Object.keys(collections).forEach((key) => {
         const collection = collections[key];
@@ -13,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         portfolioItem.innerHTML = `
             <img src="${collection.cover}" alt="${collection.title}">
             <div class="portfolio-title">${collection.title}</div>
-            `;
+        `;
 
         portfolioItem.addEventListener("click", () => {
             if (collection.type === "image") {
@@ -23,8 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        console.log(portfolioItem.parentNode);
-
         portfolioGrid.appendChild(portfolioItem);
-    })
-})
+    });
+
+    const content = document.getElementById("content");
+    content.appendChild(portfolioGrid);
+}
