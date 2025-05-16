@@ -1,0 +1,22 @@
+
+#collection-description{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+}
+
+#videos{
+    justify-content: center;
+    padding: 5vh 0;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+#video{
+    width: 90vw;
+    max-width: 900px;
+    max-height: 80vh;
+    box-sizing: border-box;
+    position: relative;
+}

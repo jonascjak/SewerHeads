@@ -2,8 +2,6 @@ import { collections } from "./collections.js";
 
 const params = new URLSearchParams(window.location.search);
 const collectionName = params.get("name");
-
-const titleEl = document.getElementById("collection-title");
 const descEl = document.getElementById("collection-description");
 
 function renderImageCollection(images) {
@@ -54,8 +52,7 @@ function renderVimeoEmbed(embedHtml) {
 }
 
 if (collections[collectionName]) {
-    const { type, title, description } = collections[collectionName];
-    titleEl.textContent = title;
+    const { type, description } = collections[collectionName];
     descEl.textContent = description;
 
     if (type === "image") {
