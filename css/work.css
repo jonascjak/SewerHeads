@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue'), local('HelveticaNeue'),
+    url('https://fonts.cdnfonts.com/s/11518/HelveticaNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue'), local('HelveticaNeue'),
+    url('https://fonts.cdnfonts.com/s/11518/HelveticaNeueMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue'), local('HelveticaNeue'),
+    url('https://fonts.cdnfonts.com/s/11518/HelveticaNeueBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue'), local('HelveticaNeue'),
+    url('https://fonts.cdnfonts.com/s/11518/HelveticaNeueBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    position: absolute;
+    width: 98%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.nav-links span {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-links span:hover {
+    text-decoration: underline;
+}
+
+#content {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#close {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#close:hover {
+    background-color: black;
+}
+
+#description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+#secondary-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: grey;
+    opacity: 0.8;
+}
