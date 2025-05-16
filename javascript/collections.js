@@ -1,9 +1,11 @@
-const collections = {
+export const collections = {
     collection1: {
+        type: "image",
         title: "Solitude 2022",
         description: "description 1",
         cover: "/content/collection1/cover.jpg",
         images: [
+            { src: "/content/collection1/cover.jpg",  alt: "cover"},
             { src: "/content/collection1/photo1.jpg", alt: "Cyclist in Copenhagen" },
             { src: "/content/collection1/photo2.jpg", alt: "Shadowy alleyway" },
             { src: "/content/collection1/photo3.jpg", alt: "Shadowy alleyway" }
@@ -50,5 +52,18 @@ const collections = {
             { src: "/content/collection4/photo11.jpg", alt: "picture of a woman"},
             { src: "/content/collection4/photo12.jpg", alt: "last picture of the collection "}
         ]
+    },
+    video1: {
+        type: "video",
+        title: "Behind the Scenes",
+        description: "A sneak peek into the making of our art.",
+        vimeoEmbed: `
+            <div style="padding:177.78% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1084156096?autoplay=1&muted=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen;"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" title="Behind the Scenes"></iframe>
+            </div>
+        `
     }
 };
