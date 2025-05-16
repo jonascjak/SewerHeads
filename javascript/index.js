@@ -1,5 +1,3 @@
-console.log('Happy developing ✨')
-
 const navbar = document.getElementById('navbar');
 let isOpen = false;
 

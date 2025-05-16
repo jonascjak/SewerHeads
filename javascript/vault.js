@@ -3,15 +3,7 @@ const toggleSwitch = document.getElementById('toggleSwitch');
 const videoContainer = document.getElementById('videoContainer');
 const backend = "http://localhost:8080"
 
-document.addEventListener('DOMContentLoaded',
-    () => {   showVimeo(), toggleSwitch.checked = false})
-toggleSwitch.addEventListener('change', () => {
-    if (toggleSwitch.checked) {
-        showPhoto();
-    } else {
-        showVimeo();
-    }
-});
+showPhoto();
 
 async function showVimeo() {
     videoContainer.innerHTML = '';

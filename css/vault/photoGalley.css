@@ -78,8 +78,8 @@ body {
 
 .scroll-gallery img {
    flex-shrink: 0;
-    width: 30vw;
-    /*height: calc(30vw*16/9); Skal der gøres noget ved */
+    width: 21vw;
+    height: calc(21vw*12/8.6);
     object-fit: contain;
     scroll-snap-align: start;
     margin: 0;
