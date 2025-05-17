@@ -162,6 +162,10 @@ body {
     margin-bottom: 10px;
 }
 
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
 .portfolio-item img {
     object-fit: contain;
     width: 100%;

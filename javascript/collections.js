@@ -58,9 +58,10 @@ export const collections = {
         </div>
     `
     },
+
     video2: {
         type: "video",
-        title: "Besatt",
+        title: "Besatt ",
         description: "Besatt 5  - year anniversary",
         cover: "/content/collection3/photo1.jpg",
         vimeoEmbed: `
@@ -72,6 +73,7 @@ export const collections = {
                     title="06_besatt_5years"></iframe>
         </div>
     `
+
     },
     video3: {
         type: "video",
