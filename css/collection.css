@@ -1,24 +1,36 @@
 
-#collection-description{
+#collection-description {
     position: absolute;
     bottom: 20px;
     left: 20px;
     font-size: 14px;
 }
 
-#videos{
+#videos {
     justify-content: center;
     padding: 5vh 0;
     max-height: 80vh;
     overflow: hidden;
 }
 
-#video{
+#video {
     width: 90vw;
     max-width: 900px;
     max-height: 80vh;
     box-sizing: border-box;
     position: relative;
+}
+
+#carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-buttons {
+    text-align: center;
 }
 
 #carouselImage {

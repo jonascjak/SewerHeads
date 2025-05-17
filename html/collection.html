@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Collection Viewer</title>
-  <link rel="stylesheet" href="../css/work.css">
-  <link rel="stylesheet" href="../css/collection.css">
+    <meta charset="UTF-8">
+    <title>Collection Viewer</title>
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="stylesheet" href="../css/collection.css">
 </head>
 <body>
 
 <p id="collection-description"></p>
 
 <div id="images" style="display: none">
-  <div id="carousel" style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
-    <div id="leftControl" style="text-align: center;">
-      <button id="prevBtn">←</button>
-    <div id="leftCounter"></div>
-  </div>
+    <div id="carousel">
 
-  <img id="carouselImage" src="" alt="" />
+        <a class="close" href="work.html">X</a>
 
-  <div id="rightControl" style="text-align: center;">
-    <button id="nextBtn">→</button>
-      <div id="rightCounter"></div>
+        <div class="carousel-buttons" id="leftControl">
+            <button id="prevBtn">←</button>
+            <div id="leftCounter"></div>
+        </div>
+
+        <img id="carouselImage" src="" alt=""/>
+
+        <div class="carousel-buttons" id="rightControl">
+            <button id="nextBtn">→</button>
+            <div id="rightCounter"></div>
+        </div>
     </div>
-  </div>
 </div>
 
-<div id="videos" style="display: flex">
-  <div id="video" style="width: 100%; max-width: 900px; margin: 0 auto;"></div>
+<div id="videos">
+    <a class="close" href="work.html">X</a>
+    <div id="video"></div>
 </div>
+
 <script type="module" src="../javascript/loadCollection.js"></script>
+
 </body>
 </html>

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const secondaryContent = pageContent[page]?.secondary || '<p>Siden ikke fundet brors</p>'
 
         content.innerHTML = `
-        <div id="close" onclick="clearContent()">X</div>
+        <div class="close" onclick="clearContent()">X</div>
         <div id="description">
             ${mainContent}
         </div>
