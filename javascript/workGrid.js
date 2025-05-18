@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     renderPortfolioGrid();
 });
 
-// Funktionen der genererer portfolio grid'et
 function renderPortfolioGrid() {
     const portfolioGrid = document.createElement("div");
     window.renderPortfolioGrid = renderPortfolioGrid;
 
-    portfolioGrid.id = "portfolio-grid"; // Sætter ID på grid'et
+    portfolioGrid.id = "portfolio-grid";
 
     Object.keys(collections).forEach((key) => {
         const collection = collections[key];
@@ -17,8 +16,9 @@ function renderPortfolioGrid() {
         const portfolioItem = document.createElement("div");
         portfolioItem.classList.add("portfolio-item");
 
+        // Lazy loading implemented here
         portfolioItem.innerHTML = `
-            <img src="${collection.cover}" alt="${collection.title}">
+            <img src="${collection.cover}" alt="${collection.title}" loading="lazy">
             <div class="portfolio-title">${collection.title}</div>
         `;
 

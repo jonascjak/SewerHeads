@@ -70,6 +70,10 @@ body {
 .nav-links span:hover {
     text-decoration: underline;
 }
+
+#vault-tab {
+    text-decoration: underline;
+}
 /* nav bar styling slut */
 
 
