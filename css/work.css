@@ -60,16 +60,22 @@ body {
     width: 180px;
 }
 
-.nav-links span {
+.nav-links span, a {
     margin-left: 20px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
 }
 
-.nav-links span:hover {
+.nav-links span:hover, a:hover {
     text-decoration: underline;
 }
+
+.nav-links a:visited {
+    color: white;
+}
+
 
 #vault-tab {
     text-decoration: underline;
