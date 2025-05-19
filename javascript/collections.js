@@ -344,7 +344,7 @@ export const collections = {
         type: "video",
         title: "bleu psommer",
         description: "bleu psommer",
-        cover: "/content/cover/thumbnail_23_bleu_psommer.webp",
+        cover: "content/cover/thumbnail_23_bleu_psommer.webp",
         vimeoEmbed:
             `
         <div style="padding-top:56.25%;position:relative;">
