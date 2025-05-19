@@ -10,7 +10,7 @@ function renderPortfolioGrid() {
 
     portfolioGrid.id = "portfolio-grid";
 
-    Object.keys(collections).forEach((key) => {
+    Object.keys(collections).reverse().forEach((key) => {
         const collection = collections[key];
 
         const portfolioItem = document.createElement("div");

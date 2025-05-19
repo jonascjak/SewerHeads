@@ -1,227 +1,358 @@
 export const collections = {
-    collection1: {
+    item1: {
         type: "image",
-        title: "Solitude",
+        title: "Solitude, 2022",
         description: "Solitude - 2022",
-        cover: "/content/collection1/cover.jpg",
+        cover: "/content/cover/thumbnail_01_solitude_2022.webp",
         images: [
-            { src: "/content/collection1/cover.jpg",  alt: "cover"},
-            { src: "/content/collection1/photo1.jpg", alt: "Cyclist in Copenhagen" },
-            { src: "/content/collection1/photo2.jpg", alt: "Shadowy alleyway" },
-            { src: "/content/collection1/photo3.jpg", alt: "Shadowy alleyway" }
+            {src: "/content/C1-Solitude2022/solitude2022_01.png", alt: "cover"},
+            {src: "/content/C1-Solitude2022/solitude2022_02.png/", alt: "Cyclist in Copenhagen"}
         ]
     },
-    collection2: {
-        type: "image",
-        title: "Martinquad voici",
-        description: "Martinquad voici - 2023",
-        cover: "/content/collection2/cover.jpg",
-        images: [
-            { src: "/content/collection2/photo1.jpg", alt: "Empty bench" },
-            { src: "/content/collection2/photo2.jpg", alt: "Person behind foggy glass" },
-            { src: "/content/collection2/photo3.jpg", alt: "picture of a woman"},
-            { src: "/content/collection2/photo4.jpg", alt: "last picture of the collection "}
-        ]
-    },
-    collection3: {
-        type: "image",
-        title: "Gumi Leschmidt",
-        description: "Gumi Leschmidt - 2025",
-        cover: "/content/collection4/cover.jpg",
-        images: [
-            { src: "/content/collection4/photo1.jpg", alt: "Empty bench" },
-            { src: "/content/collection4/photo2.jpg", alt: "Person behind foggy glass" },
-            { src: "/content/collection4/photo3.jpg", alt: "picture of a woman"},
-            { src: "/content/collection4/photo4.jpg", alt: "last picture of the collection "},
-            { src: "/content/collection4/photo5.jpg", alt: "Empty bench" },
-            { src: "/content/collection4/photo6.jpg", alt: "Person behind foggy glass" },
-            { src: "/content/collection4/photo7.jpg", alt: "picture of a woman"},
-            { src: "/content/collection4/photo8.jpg", alt: "last picture of the collection "},
-            { src: "/content/collection4/photo9.jpg", alt: "Empty bench" },
-            { src: "/content/collection4/photo10.jpg", alt: "Person behind foggy glass" },
-            { src: "/content/collection4/photo11.jpg", alt: "picture of a woman"},
-            { src: "/content/collection4/photo12.jpg", alt: "last picture of the collection "}
-        ]
-    },
-    video1: {
+    item2: {
         type: "video",
-        title: "Hiberanting Hopes",
-        description: "Solitude - Hibernating Hopes",
-        cover: "/content/collection3/cover.jpg",
+        title: "solitude and bby angel, 2022",
+        description: "solitude and bby angel",
+        cover: "/content/cover/thumbnail_02_solitude_bbyangel.webp",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084153234?autoplay=1&muted=1" 
+            <iframe src="https://player.vimeo.com/video/1084152673?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="05_solitudestudios_hibernatinghopes"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
 
-    video2: {
+    item3: {
         type: "video",
-        title: "Besatt ",
-        description: "Besatt 5  - year anniversary",
-        cover: "/content/collection3/photo1.jpg",
-        vimeoEmbed: `
+        title: "all is right with the world, 2022",
+        description: "all is right with the world",
+        cover: "/content/cover/thumbnail_03_airwtw.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084154390?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084152801?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="06_besatt_5years"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
+    },
+    item4: {
+        type: "image",
+        title: "martin quad vvlo, 20xx",
+        description: "martin quad vvlo, 20xx",
+        cover: "/content/cover/thumbnail_04_vvlo_photos.webp",
+        images: [
+            {src: "/content/C3-QuadVVLO/quad_vvlo_portraits_01.png", alt: "cover"},
+            {src: "/content/C3-QuadVVLO/quad_vvlo_portraits_02.png", alt: "cover"},
+            {src: "/content/C3-QuadVVLO/quad_vvlo_portraits_03.png", alt: "cover"},
+            {src: "/content/C3-QuadVVLO/quad_vvlo_portraits_04.png", alt: "cover"}
+        ]
+    },
 
-    },
-    video3: {
+    item5: {
         type: "video",
-        title: "Blondie",
-        description: "Antground - Blondie",
-        cover: "/content/collection3/photo2.jpg",
-        vimeoEmbed: `    
+        title: "Vvlo fugle",
+        description: "Vvlo fugle",
+        cover: "/content/cover/thumbnail_05_vvlo_murmage.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084154871?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084152921?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="07_antground_blondie"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video4: {
+
+    item6: {
         type: "video",
-        title: "Edna",
-        description: "Antground - Edna",
-        cover: "/content/collection3/photo4.jpg",
-        vimeoEmbed: `
+        title: "Vvlo show",
+        description: "Vvlo show",
+        cover: "/content/cover/thumbnail_06_vvlo_film.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084154945?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084152972?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="08_antground_edna"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video5: {
+
+    item7: {
         type: "video",
-        title: "Svetlana",
-        description: "Antground - Svetlana",
-        cover: "/content/collection3/photo5.jpg",
-        vimeoEmbed: `
+        title: "solitude hibernating hopes",
+        description: "solitude hibernating hopes",
+        cover: "/content/cover/thumbnail_07_solitude_hopes.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084155031?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084153234?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="09_antground_svetlana"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video6: {
+
+    item8: {
         type: "video",
-        title: "Goss",
-        description: "Salon Bleu - Goss",
-        cover: "/content/collection3/cover.jpg",
-        vimeoEmbed: `
+        title: "besatt 5 år",
+        description: "besatt 5 år",
+        cover: "/content/cover/thumbnail_08_besatt_5.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084155194?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084154390?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="11_salonbleu_goss"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video7: {
+
+    item9: {
         type: "video",
-        title: "Winter",
-        description: "Søpavillonen - Winter",
-        cover: "/content/collection3/photo1.jpg",
-        vimeoEmbed: `       
+        title: "antgr0und blondie",
+        description: "antgr0und blondie",
+        cover: "/content/cover/thumbnail_09_antground_blondie.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084155327?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084154871?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="12_soe_winterfw"></iframe>
-        </div> 
-    `
-    },
-    video8: {
-        type: "video",
-        title: "Cinderella1",
-        description: "Cinderella",
-        cover: "/content/collection3/photo2.jpg",
-        vimeoEmbed: `
-        <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084155451?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="13_cinderella01"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video9: {
+
+    item10: {
         type: "video",
-        title: "Freja",
-        description: "Salon Bleu - Freja Kirk",
-        cover: "/content/collection3/photo3.jpg",
-        vimeoEmbed: `
+        title: "antgr0und edna",
+        description: "antgr0und edna",
+        cover: "/content/cover/thumbnail_10_antground_edna.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084155733?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084154945?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="14_salonbleu_frejakirk"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video10: {
+
+    item11: {
         type: "video",
-        title: "Søpavillonen",
-        description: "Søpavillonen",
-        cover: "/content/collection3/photo4.jpg",
-        vimeoEmbed: `   
+        title: "antgr0und svetlana",
+        description: "antgr0und svetlana",
+        cover: "/content/cover/thumbnail_11_antground_svetlana.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084155867?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084155031?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="16_soe_6aar"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video11: {
+
+    item12: {
         type: "video",
-        title: "Cinderella",
-        description: "Cinderella",
-        cover: "/content/collection3/photo5.jpg",
-        vimeoEmbed: ` 
+        title: "rkm bbyangel",
+        description: "rkm bbyangel",
+        cover: "/content/cover/thumbnail_12_rkm_bbyangel.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084156096?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084155105?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="18_cinderella02"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },
-    video12: {
+
+    item13: {
         type: "video",
-        title: "Peter",
-        description: "Salon Bleu - Peter Sommer",
-        cover: "/content/collection3/photo1.jpg",
-        vimeoEmbed: `     
+        title: "bleu goss",
+        description: "bleu goss",
+        cover: "/content/cover/thumbnail_13_bleu_goss.webp",
+        vimeoEmbed:
+            `
         <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084156123?autoplay=1&muted=1" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen;" 
+            <iframe src="https://player.vimeo.com/video/1084155194?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="19_salonbleu_petersommer"></iframe>
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item14: {
+        type: "video",
+        title: "soe fw",
+        description: "soe fw",
+        cover: "/content/cover/thumbnail_14_soe_fw.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084155327?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item15: {
+        type: "video",
+        title: "cinderella1",
+        description: "cinderella1",
+        cover: "/content/cover/thumbnail_15_cinderella1.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084155451?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item17: {
+        type: "video",
+        title: "bleu freja kirk",
+        description: "bleu freja kirk",
+        cover: "/content/cover/thumbnail_17_bleu_frejakirk.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084155451?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item18: {
+        type: "video",
+        title: "limited tonser",
+        description: "limited tonser",
+        cover: "/content/cover/thumbnail_18_limited_tonser.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084155810?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item19: {
+        type: "image",
+        title: "gumi",
+        description: "gumi",
+        cover: "/content/cover/thumbnail_19_gumi_leschmidt.webp",
+        images: [
+            {src: "/content/C2-GumiLeschmidt/gumi_leschmidt_portraits_01.png", alt: "cover"},
+            {src: "/content/C2-GumiLeschmidt/gumi_leschmidt_portraits_02.png", alt: "cover"},
+            {src: "/content/C2-GumiLeschmidt/gumi_leschmidt_portraits_03.png", alt: "cover"},
+            {src: "/content/C2-GumiLeschmidt/gumi_leschmidt_portraits_04.png", alt: "cover"},
+            {src: "/content/C2-GumiLeschmidt/gumi_leschmidt_portraits_05.png", alt: "cover"}
+        ]
+    },
+
+    item20: {
+        type: "video",
+        title: "soe 6aar",
+        description: "soe 6aar",
+        cover: "/content/cover/thumbnail_20_soe_6aar.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084155867?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item21: {
+        type: "video",
+        title: "limited debbie",
+        description: "limited debbie",
+        cover: "/content/cover/thumbnail_21_limited_debbie.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084156012?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item22: {
+        type: "video",
+        title: "cinderella2",
+        description: "cinderella2",
+        cover: "/content/cover/thumbnail_22_cinderella2.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084156096?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
+        </div>
+    `
+    },
+
+    item23: {
+        type: "video",
+        title: "bleu psommer",
+        description: "bleu psommer",
+        cover: "/content/cover/thumbnail_23_bleu_psommer.webp",
+        vimeoEmbed:
+            `
+        <div style="padding-top:56.25%;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1084156123?autoplay=0&muted=0" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
     },

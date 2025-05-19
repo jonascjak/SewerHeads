@@ -18,21 +18,20 @@ function renderImageCollection(images) {
         const { src, alt } = images[currentIndex];
         imgEl.src = src;
         imgEl.alt = alt;
-        const counterText= `${currentIndex + 1} / ${images.length}`;
+        const counterText = `${currentIndex + 1} / ${images.length}`;
 
         leftCounter.textContent = counterText;
         rightCounter.textContent = counterText;
-
     }
 
     prevBtn.onclick = () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateCarousel();
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
     };
 
     nextBtn.onclick = () => {
-            currentIndex = (currentIndex + 1 + images.length) % images.length;
-            updateCarousel();
+        currentIndex = (currentIndex + 1 + images.length) % images.length;
+        updateCarousel();
     };
 
     updateCarousel();
@@ -59,11 +58,8 @@ if (collections[collectionName]) {
         renderImageCollection(collections[collectionName].images);
     } else if (type === "video") {
         renderVimeoEmbed(collections[collectionName].vimeoEmbed);
-    } else {
-
     }
 } else {
     titleEl.textContent = "Collection not found.";
     descEl.textContent = "";
 }
-
