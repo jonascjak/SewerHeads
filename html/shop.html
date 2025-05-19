@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="stylesheet" href="../css/collection.css">
+
 </head>
 <body>
+
+<a class="close" onclick="goBack()">X</a>
 
 <div id='product-component-1747567741060'></div>
 
 <script src="../javascript/shopifyBuyButton.js" defer></script>
+<script type="module">
+    import { goBack } from '../javascript/workGrid.js';
+    window.goBack = goBack;
+</script>
 
 </body>
 </html>

@@ -36,3 +36,7 @@ function renderPortfolioGrid() {
     const content = document.getElementById("content");
     content.appendChild(portfolioGrid);
 }
+
+export function goBack(){
+    history.back();
+}
