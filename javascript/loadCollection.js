@@ -8,28 +8,24 @@ function renderImageCollection(images) {
     document.getElementById("videos").style.display = "none";
     document.getElementById("images").style.display = "block";
     const imgEl = document.getElementById("carouselImage");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const leftCounter = document.getElementById("leftCounter");
-    const rightCounter = document.getElementById("rightCounter");
+    const leftControl = document.getElementById("leftControl");
+    const rightControl = document.getElementById("rightControl");
+    const bottomCounter = document.getElementById("bottomCounter");
     let currentIndex = 0;
 
     function updateCarousel() {
         const { src, alt } = images[currentIndex];
         imgEl.src = src;
         imgEl.alt = alt;
-        const counterText = `${currentIndex + 1} / ${images.length}`;
-
-        leftCounter.textContent = counterText;
-        rightCounter.textContent = counterText;
+        bottomCounter.textContent = `${currentIndex + 1} / ${images.length}`;
     }
 
-    prevBtn.onclick = () => {
+    leftControl.onclick = () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateCarousel();
     };
 
-    nextBtn.onclick = () => {
+    rightControl.onclick = () => {
         currentIndex = (currentIndex + 1 + images.length) % images.length;
         updateCarousel();
     };
