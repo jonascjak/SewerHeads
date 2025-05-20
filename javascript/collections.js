@@ -1,8 +1,8 @@
 export const collections = {
     item1: {
         type: "image",
-        title: "Solitude, 2022",
-        description: "Solitude - 2022",
+        title: "solitude studios outtakes",
+        description: "solitude studios, outtakes - 2022",
         cover: "/content/cover/thumbnail_01_solitude_2022.webp",
         images: [
             {src: "/content/C1-Solitude2022/solitude2022_01.png", alt: "cover"},
@@ -11,8 +11,8 @@ export const collections = {
     },
     item2: {
         type: "video",
-        title: "solitude and bby angel, 2022",
-        description: "solitude and bby angel",
+        title: "tanktop release event",
+        description: "solitude studios and bbyangeltattoo, tanktop release event - 2023",
         cover: "/content/cover/thumbnail_02_solitude_bbyangel.webp",
         vimeoEmbed: `
         <div style="padding-top:56.25%;position:relative;">
@@ -27,8 +27,8 @@ export const collections = {
 
     item3: {
         type: "video",
-        title: "all is right with the world, 2022",
-        description: "all is right with the world",
+        title: "all is right with the world",
+        description: "all is right with the world - 2023",
         cover: "/content/cover/thumbnail_03_airwtw.webp",
         vimeoEmbed:
             `
@@ -43,8 +43,8 @@ export const collections = {
     },
     item4: {
         type: "image",
-        title: "martin quad vvlo, 20xx",
-        description: "martin quad vvlo, 20xx",
+        title: "voici venir les oiseaux!",
+        description: "martin quad, voici venir les oiseaux!, photography - 2023",
         cover: "/content/cover/thumbnail_04_vvlo_photos.webp",
         images: [
             {src: "/content/C3-QuadVVLO/quad_vvlo_portraits_01.png", alt: "cover"},
@@ -56,8 +56,8 @@ export const collections = {
 
     item5: {
         type: "video",
-        title: "Vvlo fugle",
-        description: "Vvlo fugle",
+        title: "voici venir les oiseaux!",
+        description: "martin quad, voici venir les oiseaux!, animation - 2023",
         cover: "/content/cover/thumbnail_05_vvlo_murmage.webp",
         vimeoEmbed:
             `
@@ -73,8 +73,8 @@ export const collections = {
 
     item6: {
         type: "video",
-        title: "Vvlo show",
-        description: "Vvlo show",
+        title: "voici venir les oiseaux!",
+        description: "martin quad, voici venir les oiseaux!, video - 2023",
         cover: "/content/cover/thumbnail_06_vvlo_film.webp",
         vimeoEmbed:
             `
@@ -90,8 +90,8 @@ export const collections = {
 
     item7: {
         type: "video",
-        title: "solitude hibernating hopes",
-        description: "solitude hibernating hopes",
+        title: "hibernating hopes",
+        description: "solitude studios, hibernating hopes, runway video - 2024",
         cover: "/content/cover/thumbnail_07_solitude_hopes.webp",
         vimeoEmbed:
             `
@@ -107,8 +107,8 @@ export const collections = {
 
     item8: {
         type: "video",
-        title: "besatt 5 år",
-        description: "besatt 5 år",
+        title: "besatt magazine",
+        description: "besatt magazine, 5 year birthday celebration, video - 2024",
         cover: "/content/cover/thumbnail_08_besatt_5.webp",
         vimeoEmbed:
             `
@@ -124,8 +124,8 @@ export const collections = {
 
     item9: {
         type: "video",
-        title: "antgr0und blondie",
-        description: "antgr0und blondie",
+        title: "blondie's confession",
+        description: "antgr0und, website launch video - 2024",
         cover: "/content/cover/thumbnail_09_antground_blondie.webp",
         vimeoEmbed:
             `
@@ -141,8 +141,8 @@ export const collections = {
 
     item10: {
         type: "video",
-        title: "antgr0und edna",
-        description: "antgr0und edna",
+        title: "edna's confession",
+        description: "antgr0und, website launch video - 2024",
         cover: "/content/cover/thumbnail_10_antground_edna.webp",
         vimeoEmbed:
             `
@@ -158,8 +158,8 @@ export const collections = {
 
     item11: {
         type: "video",
-        title: "antgr0und svetlana",
-        description: "antgr0und svetlana",
+        title: "svetlana's confession",
+        description: "antgr0und, website launch video - 2024",
         cover: "/content/cover/thumbnail_11_antground_svetlana.webp",
         vimeoEmbed:
             `
@@ -175,8 +175,8 @@ export const collections = {
 
     item12: {
         type: "video",
-        title: "rkm bbyangel",
-        description: "rkm bbyangel",
+        title: "valkyrie, chooser of the slain",
+        description: "rkm and bbyangeltattoo, valkyrie, chooser of the slain, video - 2024",
         cover: "/content/cover/thumbnail_12_rkm_bbyangel.webp",
         vimeoEmbed:
             `
@@ -192,8 +192,8 @@ export const collections = {
 
     item13: {
         type: "video",
-        title: "bleu goss",
-        description: "bleu goss",
+        title: "goss live at babylon",
+        description: "salon bleu, goss live at babylon, video - 2024",
         cover: "/content/cover/thumbnail_13_bleu_goss.webp",
         vimeoEmbed:
             `
@@ -209,8 +209,8 @@ export const collections = {
 
     item14: {
         type: "video",
-        title: "soe fw",
-        description: "soe fw",
+        title: "cphfw aw25",
+        description: "copenhagen fashion week, recap video at søpavillionen - 2025",
         cover: "/content/cover/thumbnail_14_soe_fw.webp",
         vimeoEmbed:
             `
@@ -226,8 +226,8 @@ export const collections = {
 
     item15: {
         type: "video",
-        title: "cinderella1",
-        description: "cinderella1",
+        title: "baron dj set",
+        description: "baron, dj set at cinderella, video - 2025",
         cover: "/content/cover/thumbnail_15_cinderella1.webp",
         vimeoEmbed:
             `
@@ -243,8 +243,8 @@ export const collections = {
 
     item17: {
         type: "video",
-        title: "bleu freja kirk",
-        description: "bleu freja kirk",
+        title: "freja kirk live at babylon",
+        description: "salon bleu, freja kirk live at babylon, video - 2025",
         cover: "/content/cover/thumbnail_17_bleu_frejakirk.webp",
         vimeoEmbed:
             `
@@ -260,8 +260,8 @@ export const collections = {
 
     item18: {
         type: "video",
-        title: "limited tonser",
-        description: "limited tonser",
+        title: "tonser live at søpavillionen",
+        description: "limited edition, tonser live at søpavillionen, video - 2025",
         cover: "/content/cover/thumbnail_18_limited_tonser.webp",
         vimeoEmbed:
             `
@@ -277,8 +277,8 @@ export const collections = {
 
     item19: {
         type: "image",
-        title: "gumi",
-        description: "gumi",
+        title: "gumi eyewear",
+        description: "gumi eyewear campaign, shot at søren le schmidt runway show, photography - 2025",
         cover: "/content/cover/thumbnail_19_gumi_leschmidt.webp",
         images: [
             {src: "/content/C2-GumiLeschmidt/gumi_leschmidt_portraits_01.png", alt: "cover"},
@@ -291,8 +291,8 @@ export const collections = {
 
     item20: {
         type: "video",
-        title: "soe 6aar",
-        description: "soe 6aar",
+        title: "søpavillionen",
+        description: "6 year birthday celebration, søpavillionen, video - 2025",
         cover: "/content/cover/thumbnail_20_soe_6aar.webp",
         vimeoEmbed:
             `
@@ -308,8 +308,8 @@ export const collections = {
 
     item21: {
         type: "video",
-        title: "limited debbie",
-        description: "limited debbie",
+        title: "debbie sings live at søpavillionen",
+        description: "limited edition, debbie sings live at søpavillionen, video - 2025",
         cover: "/content/cover/thumbnail_21_limited_debbie.webp",
         vimeoEmbed:
             `
@@ -325,8 +325,8 @@ export const collections = {
 
     item22: {
         type: "video",
-        title: "cinderella2",
-        description: "cinderella2",
+        title: "amōun:ka dj set",
+        description: "amōun:ka, dj set at cinderella, video - 2025",
         cover: "/content/cover/thumbnail_22_cinderella2.webp",
         vimeoEmbed:
             `
@@ -342,18 +342,18 @@ export const collections = {
 
     item23: {
         type: "video",
-        title: "bleu psommer",
-        description: "bleu psommer",
+        title: "peter sommer live at babylon",
+        description: "salon bleu, peter sommer live at babylon, video - 2025",
         cover: "content/cover/thumbnail_23_bleu_psommer.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
-            <iframe src="https://player.vimeo.com/video/1084156123?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="01_solitudestudios_x_bbyangel"></iframe>
-        </div>
+        <div class="vimeo-wrapper">
+    <iframe src="https://player.vimeo.com/video/1084156123?autoplay=0&muted=0"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            title="bleu psommer"></iframe>
+  </div>
     `
-    },
+    }
 };

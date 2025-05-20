@@ -39,3 +39,71 @@
     height: 600px;
     width: auto;
 }
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    #videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        padding-top: 5vh;
+        margin: 0;
+    }
+
+    .vimeo-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: 70vh; /* gør videoen højere */
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vimeo-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    #collection-description {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        font-size: 50px;
+        text-align: left;
+        z-index: 20;
+        color: white;
+        font-weight: bold;
+    }
+
+    .close {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 30;
+        font-size: 18px;
+        color: white;
+        background: transparent;
+        border: none;
+    }
+}
+
+
+
+
