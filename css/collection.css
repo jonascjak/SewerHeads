@@ -23,19 +23,60 @@
 
 #carousel {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
     margin-top: 20px;
 }
 
-.carousel-buttons {
-    text-align: center;
+#carousel-wrapper {
+    position: relative;
+    display: inline-block;
 }
 
 #carouselImage {
-    justify-content: center;
-    align-items: center;
     height: 600px;
     width: auto;
+    display: block;
+}
+
+#bottomCounter {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%; /* Dækker hele venstre/højre halvdel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-buttons.left {
+    left: 0;
+}
+
+.carousel-buttons.right {
+    right: 0;
+}
+
+/* Kun vis pil ved hover på specifik side */
+.carousel-buttons.left:hover .arrow,
+.carousel-buttons.right:hover .arrow {
+    opacity: 1;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Pil skal ikke være klikbar – hele feltet er */
 }

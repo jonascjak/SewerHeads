@@ -10,32 +10,31 @@
 
 <p id="collection-description"></p>
 
+<a class="close" onclick="goBack()">X</a>
+
 <div id="images" style="display: none">
     <div id="carousel">
+        <div id="carousel-wrapper">
+            <img id="carouselImage" src="" alt=""/>
+            <div id="bottomCounter"></div>
 
-        <a class="close" onclick="goBack()">X</a>
+            <div class="carousel-buttons left" id="leftControl">
+                <span class="arrow">←</span>
+            </div>
 
-        <div class="carousel-buttons" id="leftControl">
-            <button id="prevBtn">←</button>
-            <div id="leftCounter"></div>
-        </div>
-
-        <img id="carouselImage" src="" alt=""/>
-
-        <div class="carousel-buttons" id="rightControl">
-            <button id="nextBtn">→</button>
-            <div id="rightCounter"></div>
+            <div class="carousel-buttons right" id="rightControl">
+                <span class="arrow">→</span>
+            </div>
         </div>
     </div>
 </div>
 
 <div id="videos">
-    <a class="close" onclick="goBack()">X</a>
     <div id="video"></div>
 </div>
 
 <script type="module" src="./javascript/loadCollection.js"></script>
-<script type="module" src="./javascript/workGrid.js"></script>
+<script type="module" src="/javascript/workGrid.js"></script>
 <script type="module">
     import { goBack } from './javascript/workGrid.js';
     window.goBack = goBack;
