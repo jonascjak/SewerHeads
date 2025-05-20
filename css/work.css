@@ -120,7 +120,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 600px;
+    max-width: none;
     line-height: 1.6;
     font-size: 18px;
 }

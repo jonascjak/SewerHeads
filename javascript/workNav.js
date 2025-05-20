@@ -1,13 +1,19 @@
 const pageContent = {
     about: {
         main: `
-      <p>A production company by Thomas Beder & Sasha Bloor</p>`,
-        secondary: "A website by Jonas Jakobsen & Peter Bang."
+       <p>
+    sewerhead is a film production company created by thomas beder and sasha bloor with focus on commercial work and documentary films<br>
+    offering workflow-solutions and expertise from idea to production to delivery<br>
+    the project has origins that dates back to 2017 when thomas and sasha were staying together in new york city, but was first truly realized in 2022 and are today based in copenhagen, denmark<br>
+    sasha has a background in fashion and business etc. etc ... (sasha skriv selv)<br>
+    thomas has a background in the danish film industry, working at multiple different post-production houses and most recently at danish broadcasting (dr) as technical post-coordinator and online editor on the 2025 series “slave af danmark”
+  </p>`,
+        secondary: "a website by jonas jakobsen & peter bang"
     },
     contact: {
         main: `
       <p>contact@sewerheadfilms.com</p>`,
-        secondary: "Feel free to reach out."
+        secondary: "feel free to reach out"
     },
     shop: {
         main: `

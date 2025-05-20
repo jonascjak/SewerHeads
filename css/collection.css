@@ -8,6 +8,7 @@
 
 #videos {
     justify-content: center;
+    align-items: center;
     padding: 5vh 0;
     max-height: 80vh;
     overflow: hidden;
@@ -23,6 +24,7 @@
 
 #carousel {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
