@@ -1,19 +1,34 @@
+
+/*Her importeres variablen collections som indeholder video- og image objekter */
 import { collections } from "./collections.js";
 
+/*Denne linje opretter et objekt der kan læse hvad der står i URL'en */
 const params = new URLSearchParams(window.location.search);
-const collectionName = params.get("name");
-const descEl = document.getElementById("collection-description");
 
+/*Denne linje opretter et objekt der præciserer params objektet, og læser og henter "name" i URL'en */
+const collectionName = params.get("name");
+
+/*Denne linje bruges til at finde og vise en beskrivelse på siden */
+const descriptionElement = document.getElementById("collection-description");
+
+/*Denne funktion bruges til at vise image objekterne i collections variablen */
 function renderImageCollection(images) {
+
+    /*Nedenstående to linjer henholdsvis skjuler videoer og fremviser images */
     document.getElementById("videos").style.display = "none";
     document.getElementById("images").style.display = "block";
+
+    /*Nedenstående linjer finder HTML elementer og gør det muligt at bruge dem til vise images */
     const imgEl = document.getElementById("carouselImage");
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
     const leftCounter = document.getElementById("leftCounter");
     const rightCounter = document.getElementById("rightCounter");
+
+    /*Nedenstående linje opretter en tæller, der skal bruges til carousel funktionaliteten*/
     let currentIndex = 0;
 
+    /*Her oprettes en funktionen til  */
     function updateCarousel() {
         const { src, alt } = images[currentIndex];
         imgEl.src = src;
@@ -37,6 +52,7 @@ function renderImageCollection(images) {
     updateCarousel();
 }
 
+
 function renderVimeoEmbed(embedHtml) {
     document.getElementById("videos").style.display = "flex";
     document.getElementById("images").style.display = "none";
@@ -52,7 +68,7 @@ function renderVimeoEmbed(embedHtml) {
 
 if (collections[collectionName]) {
     const { type, description } = collections[collectionName];
-    descEl.textContent = description;
+    descriptionElement.textContent = description;
 
     if (type === "image") {
         renderImageCollection(collections[collectionName].images);
@@ -61,5 +77,5 @@ if (collections[collectionName]) {
     }
 } else {
     titleEl.textContent = "Collection not found.";
-    descEl.textContent = "";
+    descriptionElement.textContent = "";
 }

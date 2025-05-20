@@ -76,10 +76,36 @@ body {
     color: white;
 }
 
-
 #vault-tab {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.5); /* semitransparent sort */
+        backdrop-filter: blur(4px); /* valgfrit slør */
+        padding: 10px 16px;
+        box-sizing: border-box;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    #content {
+        padding-top: 80px; /* plads under navbar */
+    }
+}
+
 /* nav bar styling slut */
 
 
@@ -191,4 +217,45 @@ body {
     text-align: left;
     align-self: flex-start;
     margin-left: 35px;
+}
+
+@media (max-width: 768px) {
+    #portfolio-grid {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 40px;
+        padding: 80px 20px 100px 20px; /* plads til navbar + titel */
+        height: 100vh;
+        scroll-behavior: smooth;
+    }
+
+    .portfolio-item {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .portfolio-item img {
+        max-height: 60vh;
+        width: auto;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .portfolio-title {
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+        right: 20px;
+        text-align: left;
+        color: white;
+        z-index: 10;
+    }
 }
