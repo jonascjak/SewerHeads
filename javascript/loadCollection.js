@@ -8,8 +8,11 @@ const params = new URLSearchParams(window.location.search);
 /*Denne linje opretter et objekt der præciserer params objektet, og læser og henter "name" i URL'en */
 const collectionName = params.get("name");
 
-/*Denne linje bruges til at finde og vise en beskrivelse på siden */
+/*Disse linje bruges til at finde og vise beskrivelse og titel på siden */
 const descriptionElement = document.getElementById("collection-description");
+const titleElement = document.getElementById("collection-title");
+
+
 
 /*Denne funktion bruges til at vise image objekterne i collections variablen */
 function renderImageCollection(images) {
@@ -67,8 +70,9 @@ function renderVimeoEmbed(embedHtml) {
 }
 
 if (collections[collectionName]) {
-    const { type, description } = collections[collectionName];
+    const { type, description, title } = collections[collectionName];
     descriptionElement.textContent = description;
+    titleElement.textContent = title;
 
     if (type === "image") {
         renderImageCollection(collections[collectionName].images);

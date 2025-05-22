@@ -15,11 +15,10 @@ export const collections = {
         description: "solitude studios and bbyangeltattoo, tanktop release event - 2023",
         cover: "/content/cover/thumbnail_02_solitude_bbyangel.webp",
         vimeoEmbed: `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152673?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -32,11 +31,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_03_airwtw.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152801?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -61,11 +60,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_05_vvlo_murmage.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152921?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -78,11 +77,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_06_vvlo_film.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152972?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -95,11 +94,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_07_solitude_hopes.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084153234?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -112,11 +111,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_08_besatt_5.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084154390?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -129,11 +128,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_09_antground_blondie.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084154871?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -146,11 +145,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_10_antground_edna.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084154945?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -163,11 +162,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_11_antground_svetlana.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155031?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -180,11 +179,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_12_rkm_bbyangel.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155105?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -197,11 +196,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_13_bleu_goss.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155194?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -214,11 +213,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_14_soe_fw.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155327?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -231,11 +230,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_15_cinderella1.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155451?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -248,11 +247,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_17_bleu_frejakirk.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155451?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -265,11 +264,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_18_limited_tonser.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155810?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -296,11 +295,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_20_soe_6aar.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155867?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -313,11 +312,11 @@ export const collections = {
         cover: "/content/cover/thumbnail_21_limited_debbie.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084156012?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
@@ -330,11 +329,10 @@ export const collections = {
         cover: "/content/cover/thumbnail_22_cinderella2.webp",
         vimeoEmbed:
             `
-        <div style="padding-top:56.25%;position:relative;">
+        <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084156096?autoplay=0&muted=0" 
                     frameborder="0"
                     allow="autoplay; fullscreen;"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                     title="01_solitudestudios_x_bbyangel"></iframe>
         </div>
     `
