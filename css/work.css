@@ -46,24 +46,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
+    padding: 1vh 2vw;
     position: relative;
     width: 98%;
-    top: 0;
-    left: 0;
     z-index: 10;
 }
 
 .logo img {
-    width: 180px;
+    width: clamp(120px, 10vw, 400px);
+    height: auto;
 }
 
 .nav-links span, a {
     margin-left: 1vw;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 5rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -103,6 +100,14 @@ body {
 
     #content {
         padding-top: 80px; /* plads under navbar */
+    }
+
+    .nav-links span, a {
+        margin-left: 1vw;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-decoration: none;
     }
 }
 /* nav bar styling slut */
@@ -203,7 +208,7 @@ body {
 
 .portfolio-item img {
     object-fit: contain;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -214,7 +219,7 @@ body {
     font-weight: 300;
     text-align: left;
     align-self: flex-start;
-    margin-left: 0vw;
+    margin-left: 2vw;
 }
 
 @media (max-width: 768px) {
