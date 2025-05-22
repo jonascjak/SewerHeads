@@ -333,6 +333,7 @@ export const collections = {
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084156123?autoplay=0&muted=0"
             allow="autoplay; fullscreen"
+            frameborder="0"
             title="bleu psommer">
             </iframe>
         </div>
