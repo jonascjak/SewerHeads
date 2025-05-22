@@ -31,7 +31,7 @@ function renderImageCollection(images) {
     /*Nedenstående linje opretter en tæller, der skal bruges til carousel funktionaliteten*/
     let currentIndex = 0;
 
-    /*Her oprettes en funktionen til  */
+    /*Her oprettes en funktionen til opdatere carousel'en */
     function updateCarousel() {
         const { src, alt } = images[currentIndex];
         imgEl.src = src;

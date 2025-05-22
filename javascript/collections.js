@@ -9,6 +9,7 @@ export const collections = {
             {src: "/content/C1-Solitude2022/solitude2022_02.png/", alt: "Cyclist in Copenhagen"}
         ]
     },
+
     item2: {
         type: "video",
         title: "tanktop release event",
@@ -17,9 +18,9 @@ export const collections = {
         vimeoEmbed: `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152673?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -33,10 +34,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152801?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -62,10 +62,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152921?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -79,10 +78,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084152972?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -96,10 +94,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084153234?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -112,11 +109,10 @@ export const collections = {
         vimeoEmbed:
             `
         <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/1084154390?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            <iframe src="https://player.vimeo.com/video/1084154390?autoplay=0&muted=0"            
+                allow="autoplay; fullscreen;"
+                title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -130,10 +126,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084154871?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -147,10 +142,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084154945?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -164,10 +158,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155031?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -181,10 +174,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155105?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -198,10 +190,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155194?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -215,10 +206,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155327?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -232,10 +222,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155451?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -249,10 +238,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155451?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -266,10 +254,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155810?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -297,10 +284,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084155867?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -314,10 +300,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084156012?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -331,9 +316,9 @@ export const collections = {
             `
         <div class="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/1084156096?autoplay=0&muted=0" 
-                    frameborder="0"
-                    allow="autoplay; fullscreen;"
-                    title="01_solitudestudios_x_bbyangel"></iframe>
+            allow="autoplay; fullscreen;"
+            title="01_solitudestudios_x_bbyangel">
+            </iframe>
         </div>
     `
     },
@@ -346,12 +331,11 @@ export const collections = {
         vimeoEmbed:
             `
         <div class="vimeo-wrapper">
-    <iframe src="https://player.vimeo.com/video/1084156123?autoplay=0&muted=0"
-            frameborder="0"
+            <iframe src="https://player.vimeo.com/video/1084156123?autoplay=0&muted=0"
             allow="autoplay; fullscreen"
-            allowfullscreen
-            title="bleu psommer"></iframe>
-  </div>
+            title="bleu psommer">
+            </iframe>
+        </div>
     `
     }
 };
