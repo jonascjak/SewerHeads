@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderPortfolioGrid() {
     const portfolioGrid = document.createElement("div");
     window.renderPortfolioGrid = renderPortfolioGrid;
-
     portfolioGrid.id = "portfolio-grid";
+
 
     Object.keys(collections).reverse().forEach((key) => {
         const collection = collections[key];

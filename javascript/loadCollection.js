@@ -1,18 +1,32 @@
 import { collections } from "./collections.js";
 
+/*Denne linje opretter et objekt der kan læse hvad der står i URL'en */
 const params = new URLSearchParams(window.location.search);
-const collectionName = params.get("name");
-const descEl = document.getElementById("collection-description");
 
+/*Denne linje opretter et objekt der præciserer params objektet, og læser og henter "name" i URL'en */
+const collectionName = params.get("name");
+
+/*Disse linje bruges til at finde og vise beskrivelse og titel på siden */
+const descriptionElement = document.getElementById("collection-description");
+const titleElement = document.getElementById("collection-title");
+
+
+
+/*Denne funktion bruges til at vise image objekterne i collections variablen */
 function renderImageCollection(images) {
+
+    /*Nedenstående to linjer henholdsvis skjuler videoer og fremviser images */
     document.getElementById("videos").style.display = "none";
     document.getElementById("images").style.display = "block";
+
+    /*Nedenstående linjer finder HTML elementer og gør det muligt at bruge dem til vise images */
     const imgEl = document.getElementById("carouselImage");
     const leftControl = document.getElementById("leftControl");
     const rightControl = document.getElementById("rightControl");
     const bottomCounter = document.getElementById("bottomCounter");
     let currentIndex = 0;
 
+    /*Her oprettes en funktionen til opdatere carousel'en */
     function updateCarousel() {
         const { src, alt } = images[currentIndex];
         imgEl.src = src;
@@ -47,8 +61,9 @@ function renderVimeoEmbed(embedHtml) {
 }
 
 if (collections[collectionName]) {
-    const { type, description } = collections[collectionName];
-    descEl.textContent = description;
+    const { type, description, title } = collections[collectionName];
+    descriptionElement.textContent = description;
+    titleElement.textContent = title;
 
     if (type === "image") {
         renderImageCollection(collections[collectionName].images);
@@ -57,5 +72,5 @@ if (collections[collectionName]) {
     }
 } else {
     titleEl.textContent = "Collection not found.";
-    descEl.textContent = "";
+    descriptionElement.textContent = "";
 }

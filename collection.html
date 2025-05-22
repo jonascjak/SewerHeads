@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Sewerhead</title>
+    <title>Collection Viewer</title>
     <link rel="stylesheet" href="./css/work.css">
     <link rel="stylesheet" href="./css/collection.css">
 </head>
 <body>
 
-<p id="collection-description"></p>
+<div class="mobile-collection-text">
+    <h1 id="collection-title"></h1>
+    <p id="collection-description"></p>
+</div>
+
 
 <a class="close" onclick="goBack()">X</a>
 
@@ -30,6 +35,7 @@
 </div>
 
 <div id="videos">
+    <a class="close" onclick="goBack()">X</a>
     <div id="video"></div>
 </div>
 
