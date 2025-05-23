@@ -20,7 +20,7 @@
 }
 
 #collection-description {
-    font-size: 8rem;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -116,7 +116,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
@@ -163,6 +163,24 @@
         border: none;
     }
 
+    #carousel-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 1vw;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    #carouselImage {
+        max-height: 50vh;
+        width: 100%;
+        max-width: 90vw;
+        object-fit: cover;
+        display: flex;
+        margin: 0 auto;
+    }
+
     .mobile-collection-text {
         position: fixed;
         bottom: 20px;
@@ -175,7 +193,7 @@
 
     #collection-title {
         display: block;
-        font-size: 30px;
+        font-size: clamp(1.1rem, 2vh, 1.3rem);
         font-weight: 900;
     }
 
@@ -188,7 +206,7 @@
         top: 20px;
         left: 12px;
         z-index: 30;
-        font-size: 18px;
+        font-size: 1.5rem;
         color: white;
         background: transparent;
         border: none;

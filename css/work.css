@@ -37,7 +37,6 @@ body {
     font-family: 'Helvetica Neue Bold', sans-serif;
     height: 100vh;
     padding: 0;
-    flex-direction: column;
     overflow: hidden;
 }
 
@@ -53,14 +52,14 @@ body {
 }
 
 .logo img {
-    width: clamp(120px, 10vw, 400px);
+    width: clamp(110px, 10vw, 400px);
     height: auto;
 }
 
 .nav-links span, a {
     margin-left: 1vw;
     cursor: pointer;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -77,40 +76,6 @@ body {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        position: fixed;
-        padding-top: 4vh;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        background-color: rgba(0, 0, 0, 0.5); /* semitransparent sort */
-        backdrop-filter: blur(4px); /* valgfrit slør */
-        box-sizing: border-box;
-    }
-
-    .nav-links {
-        padding-right: 1vw;
-    }
-
-    .logo img {
-        width: 120px;
-        padding-left: 4vw;
-    }
-
-    #content {
-        padding-top: 80px; /* plads under navbar */
-    }
-
-    .nav-links span, a {
-        margin-left: 1vw;
-        cursor: pointer;
-        font-size: 1.1rem;
-        font-weight: 700;
-        text-decoration: none;
-    }
-}
-/* nav bar styling slut */
 
 
 /* nav bar elementer styling start */
@@ -169,15 +134,16 @@ body {
 #portfolio-grid {
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: repeat(2, 1fr); /* To rækker */
+    grid-template-rows: 1fr 1fr;
     gap: 40px;
     padding-left: 40px;
     padding-top: 20px;
     overflow-x: auto;
     overflow-y: hidden;
-    height: calc(100vh - 80px);
-    width: max-content; /* Sørger for at grid'et kun fylder det, det skal */
+    height: calc(100vh - 12vh);
+    width: max-content;
     align-items: start;
+    scrollbar-width: thin;
 }
 
 #portfolio-grid::-webkit-scrollbar {
@@ -199,7 +165,6 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin-bottom: 10px;
 }
 
 .portfolio-item:hover {
@@ -209,17 +174,18 @@ body {
 .portfolio-item img {
     object-fit: contain;
     width: 80%;
-    height: auto;
+    max-height: 80%;
     margin-bottom: 10px;
 }
 
 .portfolio-title {
     color: white;
-    font-size: 2vh;
+    font-size: clamp(1rem, 2vh, 2.5rem);
     font-weight: 300;
     text-align: left;
     align-self: flex-start;
     margin-left: 2vw;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -252,7 +218,33 @@ body {
         font-weight: 700;
         color: white;
         text-align: left;
-        margin-left: 0px;
+        margin-left: 0;
         padding-top: 1vh;
     }
+            .navbar {
+                position: fixed;
+                padding-top: 4vh;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                background-color: rgba(0, 0, 0, 0.5); /* semitransparent sort */
+                backdrop-filter: blur(4px); /* valgfrit slør */
+                box-sizing: border-box;
+            }
+
+            .nav-links {
+                padding-right: 1vw;
+            }
+
+            #content {
+                padding-top: 80px; /* plads under navbar */
+            }
+
+            .nav-links span, a {
+                margin-left: 1vw;
+                cursor: pointer;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-decoration: none;
+            }
 }

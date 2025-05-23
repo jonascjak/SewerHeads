@@ -23,12 +23,12 @@ body, html {
 
 .logo-container:hover .logo {
     transform: scale(1.2); /* Forstørrer logoet med 10% test tes test*/
-    transition: transform 0.3s ease; /* Glidende overgang */
 }
 
-
 .logo {
-    width: 600px; /* Den hen ændrer størrelsen */
+    width: 60vw; /* Den hen ændrer størrelsen */
+    transition: transform 0.3s ease; /* Glidende overgang */
+
 }
 
 .navbar {

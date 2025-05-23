@@ -44,6 +44,14 @@ function renderImageCollection(images) {
         updateCarousel();
     };
 
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'a' || event.key === 'ArrowLeft') {
+            leftControl.click(); // simulate click
+        } else if (event.key === 'd' || event.key === 'ArrowRight') {
+            rightControl.click(); // simulate click
+        }
+    });
+
     updateCarousel();
 }
 

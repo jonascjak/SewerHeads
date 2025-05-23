@@ -29,14 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.navigate = function (page) {
         const content = document.getElementById("content");
 
-        navbar.style.display = "none";
-        content.style.height = "100vh";
 
         const mainContent = pageContent[page]?.main || '<p>Siden ikke fundet brors</p>'
         const secondaryContent = pageContent[page]?.secondary || '<p>Siden ikke fundet brors</p>'
 
         content.innerHTML = `
-        <div class="close" onclick="clearContent()">X</div>
         <div id="description">
             ${mainContent}
         </div>
@@ -48,15 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.clearContent = function () {
         const content = document.getElementById("content");
-        const navbar = document.querySelector(".navbar");
 
         // Tømmer indholdet
         content.innerHTML = ``;
-
-        // Viser navbar igen
-        navbar.style.display = "flex";
-        navbar.style.position = "relative";
-        content.style.height = "auto";
 
         // Genskab portfolio grid
         window.renderPortfolioGrid();
