@@ -8,12 +8,12 @@ const pageContent = {
     sasha has a background in fashion and business etc. etc ... (sasha skriv selv)<br>
     thomas has a background in the danish film industry, working at multiple different post-production houses and most recently at danish broadcasting (dr) as technical post-coordinator and online editor on the 2025 series “slave af danmark”
   </p>`,
-        secondary: "a website by jonas jakobsen & peter bang"
+        secondary: "a website by nabolag.udvikling"
     },
     contact: {
         main: `
       <p>contact@sewerheadfilms.com</p>`,
-        secondary: "feel free to reach out"
+        secondary:" "
     },
     shop: {
         main: `
@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ${secondaryContent}
         </div>
         `;
+
+        console.log("calling setActiveTab")
+        setActiveTab(`nav-${page}`);
     }
 
     window.clearContent = function () {
@@ -51,6 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Genskab portfolio grid
         window.renderPortfolioGrid();
+
+        setActiveTab('nav-vault');
     };
+
+    function setActiveTab(tabId) {
+        const links = document.querySelectorAll(".nav-links span, .nav-links a");
+
+
+        links.forEach(link => link.classList.remove("active"));
+        const activeLink = document.getElementById(tabId);
+        if (activeLink) activeLink.classList.add("active");
+    }
 
 });

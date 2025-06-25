@@ -35,6 +35,7 @@ body {
     color: white;
     margin: 0;
     font-family: 'Helvetica Neue Bold', sans-serif;
+    font-weight: 700;
     height: 100vh;
     padding: 0;
     overflow: hidden;
@@ -56,7 +57,7 @@ body {
     height: auto;
 }
 
-.nav-links span, a {
+.nav-links span, .nav-links a {
     margin-left: 1vw;
     cursor: pointer;
     font-size: 3rem;
@@ -70,6 +71,12 @@ body {
 
 .nav-links a:visited {
     color: white;
+    text-decoration: underline white;
+}
+
+.navbar .nav-links span.active,
+.navbar .nav-links a.active {
+    text-decoration: underline;
 }
 
 #vault-tab {
@@ -181,10 +188,9 @@ body {
 .portfolio-title {
     color: white;
     font-size: clamp(1rem, 2vh, 2.5rem);
-    font-weight: 300;
+    font-weight: 700;
     text-align: left;
-    align-self: flex-start;
-    margin-left: 2vw;
+    width: 60%;
     height: auto;
 }
 
