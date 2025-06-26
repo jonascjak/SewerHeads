@@ -172,7 +172,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5vh 1vw;
+        padding: 0vh 1vw;
         box-sizing: border-box;
         flex-direction: column;
     }
