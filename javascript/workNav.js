@@ -17,8 +17,32 @@ const pageContent = {
     },
     shop: {
         main: `
-      <p>coming soon</p>`,
-        secondary: "Our products will be available soon."
+   <div id="shop-container">
+        <div id="product-images">
+            <div id="carousel">
+                <div id="carousel-wrapper">
+                    <img id="carouselImage" src="" alt=""/>
+                <div id="bottomCounter"></div>
+
+                <div class="carousel-buttons left" id="leftControl">
+                    <span class="arrow">←</span>
+                </div>
+
+                <div class="carousel-buttons right" id="rightControl">
+                    <span class="arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="product-component-wrapper">
+            <div id="product-info">
+                <h2>Reversable Beanie</h2>
+                <p>250DKK</p>
+            </div>
+            <div id="product-component-1750807384264"></div>
+        </div>
+    </div>`,
+        secondary: " "
     }
 };
 
@@ -29,11 +53,25 @@ document.addEventListener("DOMContentLoaded", () => {
     window.navigate = function (page) {
         const content = document.getElementById("content");
 
+        let mainContent = pageContent[page]?.main || '<p>Siden ikke fundet brors</p>';
+        let secondaryContent = pageContent[page]?.secondary || '<p>Siden ikke fundet brors</p>';
 
-        const mainContent = pageContent[page]?.main || '<p>Siden ikke fundet brors</p>'
-        const secondaryContent = pageContent[page]?.secondary || '<p>Siden ikke fundet brors</p>'
+        if (page === 'shop') {
+            content.innerHTML = mainContent + `<div id="secondary-description">${secondaryContent}</div>`;
+            loadShopifyBuyButton();
 
-        content.innerHTML = `
+            const product = {
+                images: [
+                    { src: "/content/product/front.png", alt: "Front view" },
+                    { src: "/content/product/back.png", alt: "Back view" }
+                ]
+            };
+
+            // Call image carousel function
+            renderProductImages(product);
+        } else {
+            // Almindeligt setup med #description og #secondary-description
+            content.innerHTML = `
         <div id="description">
             ${mainContent}
         </div>
@@ -68,3 +106,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+
+//caraousel funktion
+function renderProductImages(product) {
+    const images = product.images.slice(0, 2);
+
+    const imgEl = document.getElementById("carouselImage");
+    const leftControl = document.getElementById("leftControl");
+    const rightControl = document.getElementById("rightControl");
+    const bottomCounter = document.getElementById("bottomCounter");
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const { src, alt } = images[currentIndex];
+        imgEl.src = src;
+        imgEl.alt = alt || "";
+        bottomCounter.textContent = `${currentIndex + 1} / ${images.length}`;
+    }
+
+    leftControl.onclick = () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+    };
+
+    rightControl.onclick = () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    };
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+            leftControl.click();
+        } else if (event.key === 'ArrowRight') {
+            rightControl.click();
+        }
+    });
+    updateCarousel();
+}
