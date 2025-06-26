@@ -1,3 +1,5 @@
+
+
 const pageContent = {
     about: {
         main: `
@@ -7,12 +9,12 @@ const pageContent = {
     the project has origins that dates back to 2017 when thomas and sasha were staying together in new york city, but was first truly realized in 2022 and are today based in copenhagen, denmark<br>
     sasha has a background in fashion and business etc. etc ... (sasha skriv selv)<br>
     thomas has a background in the danish film industry, working at multiple different post-production houses and most recently at danish broadcasting (dr) as technical post-coordinator and online editor on the 2025 series “slave af danmark”
-  </p>`,
+        </p>`,
         secondary: "a website by nabolag.udvikling"
     },
     contact: {
         main: `
-      <p>contact@sewerheadfilms.com</p>`,
+            <p>contact@sewerheadfilms.com</p>`,
         secondary:" "
     },
     shop: {
@@ -36,20 +38,22 @@ const pageContent = {
     </div>
         <div id="product-component-wrapper">
             <div id="product-info">
-                <h2>Reversable Beanie</h2>
+                <h2>Reversible Beanie</h2>
                 <p>250DKK</p>
             </div>
             <div id="product-component-1750807384264"></div>
         </div>
     </div>`,
         secondary: " "
-    }
+    },
 };
 
 
 document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.querySelector(".navbar");
-
+    if(typeof window !== "undefined") {
+        const deviceType = navigator.userAgent;
+    }
     window.navigate = function (page) {
         const content = document.getElementById("content");
 
@@ -66,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     { src: "/content/product/back.png", alt: "Back view" }
                 ]
             };
-
+            setActiveTab(`nav-${page}`)
             // Call image carousel function
             renderProductImages(product);
         } else {
@@ -82,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         console.log("calling setActiveTab")
         setActiveTab(`nav-${page}`);
-    }
+    }}
 
     window.clearContent = function () {
         const content = document.getElementById("content");
@@ -144,3 +148,151 @@ function renderProductImages(product) {
     });
     updateCarousel();
 }
+
+export function loadShopifyBuyButton() {
+    const scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+
+    if (window.ShopifyBuy && window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
+    } else {
+        const script = document.createElement('script');
+        script.src = scriptURL;
+        script.async = true;
+        script.onload = ShopifyBuyInit;
+        document.head.appendChild(script);
+    }
+
+    function ShopifyBuyInit() {
+        const client = ShopifyBuy.buildClient({
+            domain: '93106c-fc.myshopify.com',
+            storefrontAccessToken: 'af1af931d730439d0b091ad73a61ee0d',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+                id: '14890551935308',
+                node: document.getElementById('product-component-1750807384264'),
+                moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+                options: {
+                    product: {
+                        contents: {
+                            img: false,
+                            button: false,
+                            buttonWithQuantity: true,
+                            title: false,
+                            price: false
+                        },
+                        styles: {
+                            product: {
+                                "@media (min-width: 601px)": {
+                                    maxWidth: "calc(25% - 20px)",
+                                    marginLeft: "20px",
+                                    marginBottom: "50px"
+                                }
+                            },
+                            title: {
+                                color: "#663131"
+                            },
+                            button: {
+                                borderRadius: "5px"
+                            },
+                            price: {
+                                color: "#301010"
+                            },
+                            compareAt: {
+                                color: "#301010"
+                            },
+                            unitPrice: {
+                                color: "#301010"
+                            },
+                            description: {
+                                color: "#331313"
+                            }
+                        },
+                        text: {
+                            button: "Add to cart"
+                        }
+                    },
+                    productSet: {
+                        styles: {
+                            products: {
+                                "@media (min-width: 601px)": {
+                                    marginLeft: "-20px"
+                                }
+                            }
+                        }
+                    },
+                    modalProduct: {
+                        contents: {
+                            img: false,
+                            imgWithCarousel: true,
+                            button: false,
+                            buttonWithQuantity: true
+                        },
+                        styles: {
+                            product: {
+                                "@media (min-width: 601px)": {
+                                    maxWidth: "100%",
+                                    marginLeft: "0px",
+                                    marginBottom: "0px"
+                                }
+                            },
+                            button: {
+                                borderRadius: "5px"
+                            },
+                            title: {
+                                fontFamily: "Helvetica Neue, sans-serif",
+                                fontWeight: "bold",
+                                fontSize: "26px",
+                                color: "#4c4c4c"
+                            },
+                            price: {
+                                fontFamily: "Helvetica Neue, sans-serif",
+                                fontWeight: "normal",
+                                fontSize: "18px",
+                                color: "#4c4c4c"
+                            },
+                            compareAt: {
+                                fontFamily: "Helvetica Neue, sans-serif",
+                                fontWeight: "normal",
+                                fontSize: "15.3px",
+                                color: "#4c4c4c"
+                            },
+                            unitPrice: {
+                                fontFamily: "Helvetica Neue, sans-serif",
+                                fontWeight: "normal",
+                                fontSize: "15.3px",
+                                color: "#4c4c4c"
+                            },
+                            description: {
+                                fontFamily: "Helvetica Neue, sans-serif",
+                                fontWeight: "normal",
+                                fontSize: "14px",
+                                color: "#4c4c4c"
+                            }
+                        },
+                        text: {
+                            button: "Add to cart"
+                        }
+                    },
+                    option: {},
+                    cart: {
+                        styles: {
+                            button: {
+                                borderRadius: "5px"
+                            }
+                        },
+                        text: {
+                            total: "Subtotal",
+                            button: "Checkout"
+                        },
+                        popup: false
+                    },
+                    toggle: {}
+                }
+            });
+        });
+    }
+}
+
+
